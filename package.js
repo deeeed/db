@@ -1,5 +1,5 @@
 Package.describe({
-  name: "ground:db",
+  name: "deeeed:grounddb2",
   version: "2.0.0-rc.3",
   summary: "Ground Meteor.Collections offline",
   git: "https://github.com/GroundMeteor/db.git"
@@ -22,7 +22,7 @@ Package.onUse(function (api) {
 
   api.export('Ground');
 
-  api.use(['tracker', 'dispatch:kernel@0.0.6'], 'client');
+  api.use(['tracker', 'deeeed:dispatch-kernel@0.0.6-fix'], 'client');
 
   api.mainModule('lib/client/ground.db.js', 'client');
   api.mainModule('lib/server/ground.db.js', 'server');
